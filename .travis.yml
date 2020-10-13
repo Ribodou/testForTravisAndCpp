@@ -1,6 +1,3 @@
-language: cpp
-
-
 stages:
     - build
     - test
