@@ -1,0 +1,22 @@
+language: cpp
+
+
+stages:
+    - build
+    - test
+
+
+linuxCompilation:
+    sudo: false
+
+    compiler:
+        - gcc
+        
+    - install:
+        - export BIN=${HOME}/bin
+        - mkdir ${BIN} && cd ${BIN}
+        - g++ -v
+
+    - script:
+        - g++ compile.cpp -o out
+        - echo ${BIN}
