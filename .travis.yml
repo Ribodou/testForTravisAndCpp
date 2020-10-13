@@ -14,3 +14,11 @@ linuxCompilation:
     - script:
         - g++ compile.cpp -o out
         - echo ${BIN}
+
+jobs:
+    include:
+        - stage: install
+          name: "linuxCompilation"
+          install: skip
+          script:
+            - g++ compile.cpp -o out
