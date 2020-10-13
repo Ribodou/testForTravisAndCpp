@@ -1,3 +1,5 @@
+language: minimal
+
 stages:
     - build
     - test
