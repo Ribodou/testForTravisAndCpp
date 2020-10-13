@@ -6,12 +6,7 @@ stages:
     - test
 
 
-linuxCompilation:
-    sudo: false
-
-    compiler:
-        - gcc
-        
+linuxCompilation:        
     - install:
         - export BIN=${HOME}/bin
         - mkdir ${BIN} && cd ${BIN}
